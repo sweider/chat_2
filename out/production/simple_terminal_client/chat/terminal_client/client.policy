@@ -1,0 +1,3 @@
+grant codeBase "file:/home/IdeaProjects/Chat_2/out" {
+    permission java.security.AllPermission;
+};

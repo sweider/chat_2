@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="simple_terminal_client:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/simple_terminal_client_jar</output-path>
+    <root id="archive" name="simple_terminal_client.jar">
+      <element id="module-output" name="simple_terminal_client" />
+      <element id="module-output" name="shared" />
+      <element id="file-copy" path="$PROJECT_DIR$/simple_terminal_client/src/chat/terminal_client/client.policy" />
+    </root>
+  </artifact>
+</component>
