@@ -75,6 +75,7 @@ public class ClientFacade implements IClientRemoteFacade{
             @Override
             public void run() {
                 panelsController.removeContact(contact);
+                panelsController.refreshPanel();
             }
         };
         SwingUtilities.invokeLater(r);

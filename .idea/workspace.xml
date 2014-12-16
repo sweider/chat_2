@@ -6,7 +6,25 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0af368dc-d34b-4330-8f5c-1312b12d6d09" name="Default" comment="" />
+    <list default="true" id="0af368dc-d34b-4330-8f5c-1312b12d6d09" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GUIClient/src/chat/guiclient/Colors.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GUIClient/chat/guiclient/ClientGUI$1.class" afterPath="$PROJECT_DIR$/out/production/GUIClient/chat/guiclient/ClientGUI$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GUIClient/chat/guiclient/ClientGUI$2.class" afterPath="$PROJECT_DIR$/out/production/GUIClient/chat/guiclient/ClientGUI$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GUIClient/chat/guiclient/ClientGUI.class" afterPath="$PROJECT_DIR$/out/production/GUIClient/chat/guiclient/ClientGUI.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GUIClient/chat/guiclient/controllers/contactpanelscontroller/ContactPanel$1.class" afterPath="$PROJECT_DIR$/out/production/GUIClient/chat/guiclient/controllers/contactpanelscontroller/ContactPanel$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GUIClient/chat/guiclient/controllers/contactpanelscontroller/ContactPanel$2.class" afterPath="$PROJECT_DIR$/out/production/GUIClient/chat/guiclient/controllers/contactpanelscontroller/ContactPanel$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GUIClient/chat/guiclient/controllers/contactpanelscontroller/ContactPanel.class" afterPath="$PROJECT_DIR$/out/production/GUIClient/chat/guiclient/controllers/contactpanelscontroller/ContactPanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GUIClient/chat/guiclient/controllers/contactpanelscontroller/ContactPanelsController.class" afterPath="$PROJECT_DIR$/out/production/GUIClient/chat/guiclient/controllers/contactpanelscontroller/ContactPanelsController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GUIClient_jar/GUIClient.jar" afterPath="$PROJECT_DIR$/out/artifacts/GUIClient_jar/GUIClient.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GUIClient/src/chat/guiclient/controllers/chatscontrollsystem/ChatsController.java" afterPath="$PROJECT_DIR$/GUIClient/src/chat/guiclient/controllers/chatscontrollsystem/ChatsController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GUIClient/src/chat/guiclient/ClientFacade.java" afterPath="$PROJECT_DIR$/GUIClient/src/chat/guiclient/ClientFacade.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GUIClient/src/chat/guiclient/ClientGUI.java" afterPath="$PROJECT_DIR$/GUIClient/src/chat/guiclient/ClientGUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GUIClient/src/chat/guiclient/controllers/contactpanelscontroller/ContactPanel.java" afterPath="$PROJECT_DIR$/GUIClient/src/chat/guiclient/controllers/contactpanelscontroller/ContactPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GUIClient/src/chat/guiclient/controllers/contactpanelscontroller/ContactPanelsController.java" afterPath="$PROJECT_DIR$/GUIClient/src/chat/guiclient/controllers/contactpanelscontroller/ContactPanelsController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GUIClient/src/chat/guiclient/controllers/contactpanelscontroller/IContactPanelsController.java" afterPath="$PROJECT_DIR$/GUIClient/src/chat/guiclient/controllers/contactpanelscontroller/IContactPanelsController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Chat_2.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -33,7 +51,7 @@
       <file leaf-file-name="Launcher.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUIClient/src/chat/guiclient/Launcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="626" max-vertical-offset="1638">
+            <state vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="1404">
               <caret line="48" column="44" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
               <folding>
                 <element signature="docComment;class#Launcher#0" expanded="false" />
@@ -42,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContactPanelsController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ContactPanelsController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GUIClient/src/chat/guiclient/controllers/contactpanelscontroller/ContactPanelsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="711" max-vertical-offset="1116">
-              <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+            <state vertical-scroll-proportion="-0.77040815" vertical-offset="1508" max-vertical-offset="1962">
+              <caret line="67" column="70" selection-start-line="67" selection-start-column="70" selection-end-line="67" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,12 +75,12 @@
       <file leaf-file-name="ClientFacade.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUIClient/src/chat/guiclient/ClientFacade.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="873" max-vertical-offset="1710">
-              <caret line="65" column="48" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1782">
+              <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3394#3395#0" expanded="true" />
-                <element signature="e#3433#3434#0" expanded="true" />
+                <element signature="e#2399#2599#0" expanded="true" />
+                <element signature="e#2598#2599#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,8 +89,8 @@
       <file leaf-file-name="IContactPanelsController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUIClient/src/chat/guiclient/controllers/contactpanelscontroller/IContactPanelsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414">
+              <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,11 +101,9 @@
       <file leaf-file-name="IChatsController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUIClient/src/chat/guiclient/controllers/chatscontrollsystem/IChatsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
+            <state vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="378">
               <caret line="13" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -95,38 +111,30 @@
       <file leaf-file-name="ChatsController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUIClient/src/chat/guiclient/controllers/chatscontrollsystem/ChatsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="2034">
-              <caret line="67" column="51" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="364" max-vertical-offset="2376">
+              <caret line="89" column="23" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="28" />
               <folding>
-                <element signature="e#2925#2926#0" expanded="true" />
-                <element signature="e#2995#2996#0" expanded="true" />
-                <element signature="e#3057#3058#0" expanded="true" />
-                <element signature="e#3100#3101#0" expanded="true" />
-                <element signature="e#3154#3155#0" expanded="true" />
-                <element signature="e#3244#3245#0" expanded="true" />
+                <element signature="e#2526#2784#0" expanded="true" />
+                <element signature="e#2783#2784#0" expanded="true" />
+                <element signature="e#3529#3706#0" expanded="true" />
+                <element signature="e#3705#3706#0" expanded="true" />
+                <element signature="e#3813#3814#0" expanded="true" />
+                <element signature="e#3883#3884#0" expanded="true" />
+                <element signature="e#3945#3946#0" expanded="true" />
+                <element signature="e#3988#3989#0" expanded="true" />
+                <element signature="e#4042#4043#0" expanded="true" />
+                <element signature="e#4132#4133#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/chat/server/Server.java">
+      <file leaf-file-name="Contact.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shared/src/chat/shared/Contact.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1188" max-vertical-offset="1818">
-              <caret line="85" column="49" selection-start-line="85" selection-start-column="49" selection-end-line="85" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="684">
+              <caret line="28" column="68" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="92" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IClientRemoteFacade.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shared/src/chat/shared/IClientRemoteFacade.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="450">
-              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -134,32 +142,45 @@
       <file leaf-file-name="ContactPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUIClient/src/chat/guiclient/controllers/contactpanelscontroller/ContactPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1908">
-              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1310" max-vertical-offset="2700">
+              <caret line="84" column="59" selection-start-line="84" selection-start-column="59" selection-end-line="84" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1242#1272#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientGUI.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Colors.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GUIClient/src/chat/guiclient/Colors.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+              <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientGUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUIClient/src/chat/guiclient/ClientGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.1683674" vertical-offset="1674" max-vertical-offset="3006">
-              <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2038" max-vertical-offset="3600">
+              <caret line="137" column="42" selection-start-line="137" selection-start-column="42" selection-end-line="137" selection-end-column="42" />
               <folding>
-                <element signature="e#0#8482#0" expanded="true" />
+                <element signature="e#0#10338#0" expanded="true" />
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#ClientGUI#0;class#ClientGUI#0" expanded="false" />
-                <element signature="e#945#1034#0" expanded="true" />
+                <element signature="e#1790#1962#0" expanded="true" />
+                <element signature="e#1961#1962#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -192,13 +213,14 @@
         <option value="$PROJECT_DIR$/shared/src/chat/shared/Contact.java" />
         <option value="$PROJECT_DIR$/GUIClient/src/chat/guiclient/Launcher.java" />
         <option value="$PROJECT_DIR$/server/src/chat/server/Server.java" />
-        <option value="$PROJECT_DIR$/GUIClient/src/chat/guiclient/controllers/contactpanelscontroller/IContactPanelsController.java" />
         <option value="$PROJECT_DIR$/GUIClient/src/chat/guiclient/controllers/chatscontrollsystem/IChatsController.java" />
-        <option value="$PROJECT_DIR$/GUIClient/src/chat/guiclient/ClientGUI.java" />
+        <option value="$PROJECT_DIR$/GUIClient/src/chat/guiclient/Colors.java" />
+        <option value="$PROJECT_DIR$/GUIClient/src/chat/guiclient/controllers/contactpanelscontroller/IContactPanelsController.java" />
         <option value="$PROJECT_DIR$/GUIClient/src/chat/guiclient/ClientFacade.java" />
-        <option value="$PROJECT_DIR$/GUIClient/src/chat/guiclient/controllers/contactpanelscontroller/ContactPanelsController.java" />
         <option value="$PROJECT_DIR$/GUIClient/src/chat/guiclient/controllers/chatscontrollsystem/ChatsController.java" />
+        <option value="$PROJECT_DIR$/GUIClient/src/chat/guiclient/ClientGUI.java" />
         <option value="$PROJECT_DIR$/GUIClient/src/chat/guiclient/controllers/contactpanelscontroller/ContactPanel.java" />
+        <option value="$PROJECT_DIR$/GUIClient/src/chat/guiclient/controllers/contactpanelscontroller/ContactPanelsController.java" />
       </list>
     </option>
   </component>
@@ -206,11 +228,11 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1366" />
-    <option name="height" value="744" />
+    <option name="height" value="772" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -235,12 +257,45 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Production" />
+        <subPane subId="Project Files" />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Chat_2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chat_2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chat_2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -370,11 +425,6 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Problems" />
-        <subPane subId="Production" />
-        <subPane subId="Project Files" />
       </pane>
     </panes>
   </component>
@@ -731,22 +781,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <extension name="scalaCoverage" />
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -765,6 +799,22 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
       <method />
     </configuration>
     <configuration default="false" name="Unnamed" type="AntRunConfiguration" factoryName="Ant Target">
@@ -818,14 +868,15 @@
       <workItem from="1417845848911" duration="39858000" />
       <workItem from="1418608855208" duration="354000" />
       <workItem from="1418609310210" duration="4142000" />
+      <workItem from="1418692420255" duration="13754000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44354000" />
+    <option name="totallyTimeSpent" value="58108000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
+    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -893,6 +944,20 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/GUIClient/src/chat/guiclient/ClientGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3006">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10338#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#ClientGUI#0;class#ClientGUI#0" expanded="false" />
+            <element signature="e#1790#1962#0" expanded="true" />
+            <element signature="e#1961#1962#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/GUIClient/src/chat/guiclient/Launcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="626" max-vertical-offset="1638">
@@ -919,8 +984,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3394#3395#0" expanded="true" />
-            <element signature="e#3433#3434#0" expanded="true" />
+            <element signature="e#2399#2599#0" expanded="true" />
+            <element signature="e#2598#2599#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -939,9 +1004,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="378">
           <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -950,12 +1013,16 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="1998">
           <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
           <folding>
-            <element signature="e#2925#2926#0" expanded="true" />
-            <element signature="e#2995#2996#0" expanded="true" />
-            <element signature="e#3057#3058#0" expanded="true" />
-            <element signature="e#3100#3101#0" expanded="true" />
-            <element signature="e#3154#3155#0" expanded="true" />
-            <element signature="e#3244#3245#0" expanded="true" />
+            <element signature="e#2526#2784#0" expanded="true" />
+            <element signature="e#2783#2784#0" expanded="true" />
+            <element signature="e#3529#3706#0" expanded="true" />
+            <element signature="e#3705#3706#0" expanded="true" />
+            <element signature="e#3813#3814#0" expanded="true" />
+            <element signature="e#3883#3884#0" expanded="true" />
+            <element signature="e#3945#3946#0" expanded="true" />
+            <element signature="e#3988#3989#0" expanded="true" />
+            <element signature="e#4042#4043#0" expanded="true" />
+            <element signature="e#4132#4133#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -964,7 +1031,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1188" max-vertical-offset="1818">
           <caret line="85" column="49" selection-start-line="85" selection-start-column="49" selection-end-line="85" selection-end-column="49" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#400#401#0" expanded="false" />
+            <element signature="e#472#473#0" expanded="false" />
+            <element signature="e#2256#2265#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -972,9 +1044,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="450">
           <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -984,7 +1054,6 @@
           <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1242#1272#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -994,10 +1063,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1620" max-vertical-offset="2970">
           <caret line="101" column="32" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
           <folding>
-            <element signature="e#0#8482#0" expanded="true" />
+            <element signature="e#0#10338#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#ClientGUI#0;class#ClientGUI#0" expanded="false" />
-            <element signature="e#945#1034#0" expanded="true" />
+            <element signature="e#1790#1962#0" expanded="true" />
+            <element signature="e#1961#1962#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1028,8 +1098,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3394#3395#0" expanded="true" />
-            <element signature="e#3433#3434#0" expanded="true" />
+            <element signature="e#2399#2599#0" expanded="true" />
+            <element signature="e#2598#2599#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1048,9 +1118,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="378">
           <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1059,12 +1127,16 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="1998">
           <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
           <folding>
-            <element signature="e#2925#2926#0" expanded="true" />
-            <element signature="e#2995#2996#0" expanded="true" />
-            <element signature="e#3057#3058#0" expanded="true" />
-            <element signature="e#3100#3101#0" expanded="true" />
-            <element signature="e#3154#3155#0" expanded="true" />
-            <element signature="e#3244#3245#0" expanded="true" />
+            <element signature="e#2526#2784#0" expanded="true" />
+            <element signature="e#2783#2784#0" expanded="true" />
+            <element signature="e#3529#3706#0" expanded="true" />
+            <element signature="e#3705#3706#0" expanded="true" />
+            <element signature="e#3813#3814#0" expanded="true" />
+            <element signature="e#3883#3884#0" expanded="true" />
+            <element signature="e#3945#3946#0" expanded="true" />
+            <element signature="e#3988#3989#0" expanded="true" />
+            <element signature="e#4042#4043#0" expanded="true" />
+            <element signature="e#4132#4133#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1073,7 +1145,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1188" max-vertical-offset="1818">
           <caret line="85" column="49" selection-start-line="85" selection-start-column="49" selection-end-line="85" selection-end-column="49" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#400#401#0" expanded="false" />
+            <element signature="e#472#473#0" expanded="false" />
+            <element signature="e#2256#2265#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1081,9 +1158,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="450">
           <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1093,7 +1168,6 @@
           <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1242#1272#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1103,10 +1177,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1620" max-vertical-offset="2970">
           <caret line="101" column="32" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
           <folding>
-            <element signature="e#0#8482#0" expanded="true" />
+            <element signature="e#0#10338#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#ClientGUI#0;class#ClientGUI#0" expanded="false" />
-            <element signature="e#945#1034#0" expanded="true" />
+            <element signature="e#1790#1962#0" expanded="true" />
+            <element signature="e#1961#1962#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1230,14 +1305,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shared/src/chat/shared/Contact.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="684">
-          <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/chat/server/Launcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="208" max-vertical-offset="810">
@@ -1256,9 +1323,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="450">
           <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1266,16 +1331,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1188" max-vertical-offset="1818">
           <caret line="85" column="49" selection-start-line="85" selection-start-column="49" selection-end-line="85" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GUIClient/src/chat/guiclient/Launcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="626" max-vertical-offset="1638">
-          <caret line="48" column="44" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
           <folding>
-            <element signature="docComment;class#Launcher#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#400#401#0" expanded="false" />
+            <element signature="e#472#473#0" expanded="false" />
+            <element signature="e#2256#2265#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1284,79 +1344,107 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
           <caret line="13" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUIClient/src/chat/guiclient/Launcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="1404">
+          <caret line="48" column="44" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#Launcher#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/src/chat/shared/Contact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="684">
+          <caret line="28" column="68" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUIClient/src/chat/guiclient/Colors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+          <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GUIClient/src/chat/guiclient/controllers/contactpanelscontroller/IContactPanelsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414">
+          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GUIClient/src/chat/guiclient/ClientFacade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="873" max-vertical-offset="1710">
-          <caret line="65" column="48" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3394#3395#0" expanded="true" />
-            <element signature="e#3433#3434#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GUIClient/src/chat/guiclient/controllers/chatscontrollsystem/ChatsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="2034">
-          <caret line="67" column="51" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="364" max-vertical-offset="2376">
+          <caret line="89" column="23" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="28" />
           <folding>
-            <element signature="e#2925#2926#0" expanded="true" />
-            <element signature="e#2995#2996#0" expanded="true" />
-            <element signature="e#3057#3058#0" expanded="true" />
-            <element signature="e#3100#3101#0" expanded="true" />
-            <element signature="e#3154#3155#0" expanded="true" />
-            <element signature="e#3244#3245#0" expanded="true" />
+            <element signature="e#2526#2784#0" expanded="true" />
+            <element signature="e#2783#2784#0" expanded="true" />
+            <element signature="e#3529#3706#0" expanded="true" />
+            <element signature="e#3705#3706#0" expanded="true" />
+            <element signature="e#3813#3814#0" expanded="true" />
+            <element signature="e#3883#3884#0" expanded="true" />
+            <element signature="e#3945#3946#0" expanded="true" />
+            <element signature="e#3988#3989#0" expanded="true" />
+            <element signature="e#4042#4043#0" expanded="true" />
+            <element signature="e#4132#4133#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GUIClient/src/chat/guiclient/controllers/contactpanelscontroller/ContactPanelsController.java">
+    <entry file="file://$PROJECT_DIR$/GUIClient/src/chat/guiclient/ClientFacade.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="1116">
-          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1254" max-vertical-offset="1782">
+          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GUIClient/src/chat/guiclient/controllers/contactpanelscontroller/ContactPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1908">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1242#1272#0" expanded="true" />
+            <element signature="e#2399#2599#0" expanded="true" />
+            <element signature="e#2598#2599#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GUIClient/src/chat/guiclient/ClientGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.1683674" vertical-offset="1674" max-vertical-offset="3006">
-          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2038" max-vertical-offset="3600">
+          <caret line="137" column="42" selection-start-line="137" selection-start-column="42" selection-end-line="137" selection-end-column="42" />
           <folding>
-            <element signature="e#0#8482#0" expanded="true" />
+            <element signature="e#0#10338#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#ClientGUI#0;class#ClientGUI#0" expanded="false" />
-            <element signature="e#945#1034#0" expanded="true" />
+            <element signature="e#1790#1962#0" expanded="true" />
+            <element signature="e#1961#1962#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUIClient/src/chat/guiclient/controllers/contactpanelscontroller/ContactPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1310" max-vertical-offset="2700">
+          <caret line="84" column="59" selection-start-line="84" selection-start-column="59" selection-end-line="84" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUIClient/src/chat/guiclient/controllers/contactpanelscontroller/ContactPanelsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.77040815" vertical-offset="1508" max-vertical-offset="1962">
+          <caret line="67" column="70" selection-start-line="67" selection-start-column="70" selection-end-line="67" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

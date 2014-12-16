@@ -10,5 +10,8 @@ public interface IContactPanelsController extends IController {
     void addNewContact(Contact contact);
     void removeContact(Contact contact);
     void markAsWithNewMessagePanelFor(Contact contact);
+    void movePanelForContactToTop(Contact contact);
     void refreshPanel();
+
+    void setActiveForPanelForContact(Contact contact, boolean value);
 }

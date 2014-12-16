@@ -1,22 +1,35 @@
 package chat.guiclient.controllers.contactpanelscontroller;
 
+import chat.guiclient.Colors;
 import chat.guiclient.controllers.chatscontrollsystem.IChatsController;
 import chat.shared.Contact;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 /**
+ *
  * Created by alex on 12/6/14.
  */
 public class ContactPanel extends javax.swing.JPanel {
+    //<editor-fold desc="Colors">
+    private static Color NORMAL_BG_COLOR = Colors.BACKGROUND_COLOR;
+    private static Color HOVER_BG_COLOR = Colors.PETER_RIVER;
+    private static Color ACTIVE_BG_COLOR = Colors.EMERALD;
+
+    private static final Color LABEL_NORMAL_COLOR = Colors.WET_ASPHALT;
+    private static final Color LABEL_ACTIVE_COLOR = Colors.CLOUDS;
+    private static final Color LABEL_HOVER_COLOR = Colors.BACKGROUND_COLOR;
+    private static final Color LABEL_MARKUP_COLOR = Colors.PUMPKIN.brighter();
+    //</editor-fold>
     public static final String HINT_ENDING = "new messages";
-    private static Color WITH_NEW_MESSAGES_COLOR;
-    private static Color WITHOUT_NEW_MESSAGES_COLOR;
     private final IChatsController chatsController;
     private final Contact contact;
     private JLabel nickLabel;
     private int currentNotReadMsgCount = 0;
+    private boolean isActive;
 
 
     /**
@@ -26,8 +39,6 @@ public class ContactPanel extends javax.swing.JPanel {
         this.chatsController = controller;
         this.contact = contact;
         initComponents();
-        WITHOUT_NEW_MESSAGES_COLOR = new Color(this.getBackground().getRGB());
-        WITH_NEW_MESSAGES_COLOR = new Color(this.getBackground().darker().getRGB());
     }
 
 
@@ -40,27 +51,47 @@ public class ContactPanel extends javax.swing.JPanel {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">
     private void initComponents() {
+        final ContactPanel self = this;
         nickLabel = new JLabel();
 
-        setMaximumSize(new java.awt.Dimension(32767, 40));
-        setMinimumSize(new java.awt.Dimension(0, 40));
-        setPreferredSize(new java.awt.Dimension(150, 40));
+        setMaximumSize(new java.awt.Dimension(32767, 35));
+        setMinimumSize(new java.awt.Dimension(0, 35));
+        setPreferredSize(new java.awt.Dimension(150, 35));
         addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 onFormClicked();
             }
         });
         setCursor(new Cursor(Cursor.HAND_CURSOR));
+        setBackground(Colors.BACKGROUND_COLOR);
+        MouseAdapter hoverListener = new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                self.setBackground(HOVER_BG_COLOR);
+                self.nickLabel.setForeground(LABEL_HOVER_COLOR);
+            }
 
+            @Override
+            public void mouseExited(MouseEvent e) {
+                self.setBackground(isActive ? ACTIVE_BG_COLOR :NORMAL_BG_COLOR);
+                self.nickLabel.setForeground(isActive ? LABEL_ACTIVE_COLOR
+                                                      : self.currentNotReadMsgCount == 0 ? LABEL_NORMAL_COLOR
+                                                                                         : LABEL_MARKUP_COLOR);
+            }
+        };
+        addMouseListener(hoverListener);
+
+        nickLabel.addMouseListener(hoverListener);
         nickLabel.setFont(new java.awt.Font("Droid Serif", 1, 13)); // NOI18N
         nickLabel.setForeground(new Color(51, 51, 51));
         nickLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         nickLabel.setText(this.contact.getNickName());
+        nickLabel.setForeground(LABEL_NORMAL_COLOR);
         nickLabel.addMouseListener(new java.awt.event.MouseAdapter() {
-                    public void mouseClicked(java.awt.event.MouseEvent evt) {
-                        onFormClicked();
-                    }
-                });
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                onFormClicked();
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -83,18 +114,31 @@ public class ContactPanel extends javax.swing.JPanel {
     }// </editor-fold>
 
     public void markAsWithNewMessages(){
-        this.setBackground(WITH_NEW_MESSAGES_COLOR);
-        String HINT = ++currentNotReadMsgCount + HINT_ENDING;
-        this.setHoverHint(HINT);
-        this.repaint();
-
+        if(!this.isActive) {
+            this.nickLabel.setForeground(LABEL_MARKUP_COLOR);
+            String HINT = ++currentNotReadMsgCount + HINT_ENDING;
+            this.setHoverHint(HINT);
+            this.repaint();
+        }
     }
 
     public void markAsWithoutNewMessages(){
-        this.setBackground(WITHOUT_NEW_MESSAGES_COLOR);
+        this.nickLabel.setForeground(LABEL_NORMAL_COLOR);
         this.currentNotReadMsgCount = 0;
         this.setHoverHint(0 + HINT_ENDING);
         this.repaint();
+    }
+
+    public void setActiveChatPanel(boolean value){
+        if(value){
+            this.setBackground(ACTIVE_BG_COLOR);
+            this.nickLabel.setForeground(LABEL_ACTIVE_COLOR);
+        }
+        else{
+            this.setBackground(NORMAL_BG_COLOR);
+            this.nickLabel.setForeground(LABEL_NORMAL_COLOR);
+        }
+        this.isActive = value;
     }
 
     public void setHoverHint(String hint){

@@ -1,6 +1,7 @@
 package chat.guiclient.controllers.chatscontrollsystem;
 
 import chat.guiclient.ClientGUI;
+import chat.guiclient.Colors;
 import chat.guiclient.ServiceLocator;
 import chat.guiclient.StandartDateFormatter;
 import chat.guiclient.controllers.contactpanelscontroller.IContactPanelsController;
@@ -9,25 +10,28 @@ import chat.shared.Message;
 
 import javax.swing.*;
 import javax.swing.text.*;
-import java.awt.*;
 import java.util.HashMap;
 
 /**
  * Created by alex on 12/6/14.
  */
 public class ChatsController implements IChatsController {
-    private final static SimpleAttributeSet OWN_MESSAGE_ATTRIBUTES;
-    private final static SimpleAttributeSet OTHERS_MESSAGE_ATTRIBUTES;
+    private final static SimpleAttributeSet OWN_MESSAGE_HEADER_ATTRIBUTES;
+    private final static SimpleAttributeSet OTHERS_MESSAGE_HEADER_ATTRIBUTES;
+    private final static SimpleAttributeSet MESSAGE_TEXT_ATTRIBUTES;
     public static final String SPACE = " ";
     public static final String NEW_LINE = "\n";
     static {
-        OWN_MESSAGE_ATTRIBUTES = new SimpleAttributeSet();
-        OWN_MESSAGE_ATTRIBUTES.addAttribute(StyleConstants.Foreground, Color.BLUE);
-        OWN_MESSAGE_ATTRIBUTES.addAttribute(StyleConstants.Bold, true);
+        OWN_MESSAGE_HEADER_ATTRIBUTES = new SimpleAttributeSet();
+        OWN_MESSAGE_HEADER_ATTRIBUTES.addAttribute(StyleConstants.Foreground, Colors.PETER_RIVER);
+        OWN_MESSAGE_HEADER_ATTRIBUTES.addAttribute(StyleConstants.Bold, true);
 
-        OTHERS_MESSAGE_ATTRIBUTES = new SimpleAttributeSet();
-        OTHERS_MESSAGE_ATTRIBUTES.addAttribute(StyleConstants.Foreground, Color.RED);
-        OTHERS_MESSAGE_ATTRIBUTES.addAttribute(StyleConstants.Bold, true);
+        OTHERS_MESSAGE_HEADER_ATTRIBUTES = new SimpleAttributeSet();
+        OTHERS_MESSAGE_HEADER_ATTRIBUTES.addAttribute(StyleConstants.Foreground, Colors.ALIZARIN);
+        OTHERS_MESSAGE_HEADER_ATTRIBUTES.addAttribute(StyleConstants.Bold, true);
+
+        MESSAGE_TEXT_ATTRIBUTES = new SimpleAttributeSet();
+        MESSAGE_TEXT_ATTRIBUTES.addAttribute(StyleConstants.Foreground, Colors.TEXT_FOREGROUND);
     }
 
     private final HashMap<Contact, StyledDocument> mapper;
@@ -46,10 +50,19 @@ public class ChatsController implements IChatsController {
     public void activateChatForContact(final Contact contact) {
         if(!contact.equals(this.currentDialogContact)) {
             this.addIfNotExist(contact);
+            this.contactPanelsController.setActiveForPanelForContact(this.currentDialogContact, false);
             this.currentDialogContact = contact;
             final String chatCaption = contact.equals(Contact.GLOBAL_CHAT) ? "Global chat" : "Chat with " + contact.getNickName();
             clientGui.setAsCurrentChatDocument(mapper.get(contact));
             clientGui.setAsCurrentChatCaption(chatCaption);
+            Runnable r = new Runnable() {
+                @Override
+                public void run() {
+                    contactPanelsController.setActiveForPanelForContact(contact, true);
+                    contactPanelsController.refreshPanel();
+                }
+            };
+            SwingUtilities.invokeLater(r);
         }
     }
 
@@ -60,12 +73,13 @@ public class ChatsController implements IChatsController {
             case CHAT: this.addGlobalChatMessage(message); break;
             default: assert false;
         }
-        if(!message.getSender().equals(self) && !message.getSender().equals(currentDialogContact)){
-            final Contact con = message.getType() == Message.Type.CHAT ? Contact.GLOBAL_CHAT : message.getSender();
+        boolean messageToCurrentlyActiveChat = message.getSender().equals(currentDialogContact) && message.getReceiver().equals(self);
+        boolean ownMessage = message.getSender().equals(self);
+        if(!messageToCurrentlyActiveChat && !ownMessage){
+            final Contact contact = message.getType() == Message.Type.CHAT ? Contact.GLOBAL_CHAT : message.getSender();
             Runnable r = new Runnable() {
-                @Override
-                public void run() {
-                    contactPanelsController.markAsWithNewMessagePanelFor(con);
+                @Override public void run() {
+                    contactPanelsController.markAsWithNewMessagePanelFor(contact);
                 }
             };
             SwingUtilities.invokeLater(r);
@@ -109,12 +123,12 @@ public class ChatsController implements IChatsController {
 
     void addMessageToDocument(StyledDocument document, Message message, boolean isOwnMessage){
         try {
-            SimpleAttributeSet set = isOwnMessage ? OWN_MESSAGE_ATTRIBUTES : OTHERS_MESSAGE_ATTRIBUTES;
-            document.insertString(document.getLength(), message.getSender().getNickName() + SPACE, set);
+            SimpleAttributeSet headerAttributes = isOwnMessage ? OWN_MESSAGE_HEADER_ATTRIBUTES : OTHERS_MESSAGE_HEADER_ATTRIBUTES;
+            document.insertString(document.getLength(), message.getSender().getNickName() + SPACE, headerAttributes);
             document.insertString(document.getLength()
                     , "(" + StandartDateFormatter.formatDate(message.getSendingDate()) + "): "
-                    , set);
-            document.insertString(document.getLength(), message.getText()+ NEW_LINE, document.getStyle("regular"));
+                    , headerAttributes);
+            document.insertString(document.getLength(), message.getText()+ NEW_LINE, MESSAGE_TEXT_ATTRIBUTES);
         } catch (BadLocationException e) {
             e.printStackTrace();
         }

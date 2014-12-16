@@ -38,51 +38,66 @@ public class ClientGUI extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {leftPanel = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        chatAreaWrapper = new javax.swing.JScrollPane();
         chatArea = new javax.swing.JTextPane();
         inputPanel = new javax.swing.JPanel();
-        jScrollPane2 = new javax.swing.JScrollPane();
+        inputAreaWrapper = new javax.swing.JScrollPane();
         inputArea = new javax.swing.JTextArea();
         rightSidePanel = new javax.swing.JPanel();
         chatCaptionLabel = new JLabel();
+        separator = new javax.swing.JSeparator();
+        rightPanelWrapper = new javax.swing.JScrollPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(500, 0));
+        setMinimumSize(new java.awt.Dimension(500, 416));
         setPreferredSize(new java.awt.Dimension(640, 416));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 formWindowClosing(evt);
             }
         });
+        setTitle("What's Up killer");
+        setBackground(Colors.BACKGROUND_COLOR);
 
+        chatCaptionLabel.setFont(chatCaptionLabel.getFont().deriveFont(chatCaptionLabel.getFont().getStyle() | java.awt.Font.BOLD));
         chatCaptionLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        chatCaptionLabel.setForeground(Colors.TEXT_FOREGROUND);
         chatCaptionLabel.setInheritsPopupMenu(false);
 
         chatArea.setEditable(false);
-        jScrollPane1.setViewportView(chatArea);
+        chatArea.setFocusable(false);
+        chatAreaWrapper.setBorder(BorderFactory.createLineBorder(Colors.BORDERS_COLOR, 1));
+        chatAreaWrapper.setViewportView(chatArea);
 
         inputArea.setColumns(20);
         inputArea.setRows(4);
+        inputArea.setForeground(Colors.TEXT_FOREGROUND);
+        inputArea.setLineWrap(true);
         inputArea.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 inputAreaKeyPressed(evt);
             }
         });
-        jScrollPane2.setViewportView(inputArea);
+        inputAreaWrapper.setViewportView(inputArea);
+        inputAreaWrapper.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
+        inputAreaWrapper.setBorder(BorderFactory.createLineBorder(Colors.BORDERS_COLOR, 1));
 
+        inputPanel.setBackground(Colors.BACKGROUND_COLOR);
         javax.swing.GroupLayout inputPanelLayout = new javax.swing.GroupLayout(inputPanel);
         inputPanel.setLayout(inputPanelLayout);
         inputPanelLayout.setHorizontalGroup(
                 inputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 291, Short.MAX_VALUE)
+                        .addComponent(inputAreaWrapper, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 291, Short.MAX_VALUE)
+                //.addGap(2,2,2)
         );
         inputPanelLayout.setVerticalGroup(
                 inputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, inputPanelLayout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                //.addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(inputAreaWrapper, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
+        leftPanel.setBackground(Colors.BACKGROUND_COLOR);
         javax.swing.GroupLayout leftPanelLayout = new javax.swing.GroupLayout(leftPanel);
         leftPanel.setLayout(leftPanelLayout);
         leftPanelLayout.setHorizontalGroup(
@@ -91,8 +106,9 @@ public class ClientGUI extends javax.swing.JFrame {
                                 .addContainerGap()
                                 .addGroup(leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(chatCaptionLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jScrollPane1)
-                                        .addComponent(inputPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                        .addComponent(chatAreaWrapper)
+                                        .addComponent(inputPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(5, 5, 5))
 
         );
         leftPanelLayout.setVerticalGroup(
@@ -101,26 +117,25 @@ public class ClientGUI extends javax.swing.JFrame {
                                 .addContainerGap()
                                 .addComponent(chatCaptionLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 313, Short.MAX_VALUE)
+                                .addComponent(chatAreaWrapper, javax.swing.GroupLayout.DEFAULT_SIZE, 313, Short.MAX_VALUE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(inputPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addContainerGap())
         );
 
+        separator.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        separator.setMaximumSize(new java.awt.Dimension(1, 32767));
+        separator.setPreferredSize(new java.awt.Dimension(1, 10));
+        separator.setForeground(Colors.BORDERS_COLOR);
+        separator.setBackground(Colors.BORDERS_COLOR);
+
         rightSidePanel.setMaximumSize(new java.awt.Dimension(250, 32767));
         rightSidePanel.setMinimumSize(new java.awt.Dimension(150, 100));
-        rightSidePanel.setPreferredSize(new java.awt.Dimension(150, 0));
-
-        javax.swing.GroupLayout rightSidePanelLayout = new javax.swing.GroupLayout(rightSidePanel);
-        rightSidePanel.setLayout(rightSidePanelLayout);
-        rightSidePanelLayout.setHorizontalGroup(
-                rightSidePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 150, Short.MAX_VALUE)
-        );
-        rightSidePanelLayout.setVerticalGroup(
-                rightSidePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 0, Short.MAX_VALUE)
-        );
+        //rightSidePanel.setPreferredSize(new java.awt.Dimension(150, 0));
+        rightSidePanel.setLayout(new javax.swing.BoxLayout(rightSidePanel, javax.swing.BoxLayout.PAGE_AXIS));
+        rightPanelWrapper.setViewportView(rightSidePanel);
+        rightSidePanel.setBackground(Colors.BACKGROUND_COLOR);
+        rightPanelWrapper.setBorder(null);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -128,13 +143,22 @@ public class ClientGUI extends javax.swing.JFrame {
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
                                 .addComponent(leftPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rightSidePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        // .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(separator, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        // .addGap(2, 2, 2)
+                                .addComponent(rightPanelWrapper, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(2, 2, 2))
         );
         layout.setVerticalGroup(
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(leftPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(rightSidePanel, javax.swing.GroupLayout.DEFAULT_SIZE, 426, Short.MAX_VALUE)
+                       .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                               .addGap(2, 2, 2)
+                               .addGroup(layout.createParallelGroup()
+                                       .addComponent(separator, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                       .addComponent(rightPanelWrapper)
+                               ))
+
         );
 
         pack();
@@ -156,6 +180,7 @@ public class ClientGUI extends javax.swing.JFrame {
 
     public void setAsCurrentChatDocument(StyledDocument document){
         this.chatArea.setStyledDocument(document);
+        this.inputArea.grabFocus();
     }
 
     public void setAsCurrentChatCaption(String str){ this.chatCaptionLabel.setText(str);}
@@ -169,9 +194,11 @@ public class ClientGUI extends javax.swing.JFrame {
     javax.swing.JTextArea inputArea;
     javax.swing.JPanel inputPanel;
     private javax.swing.JLabel chatCaptionLabel;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane chatAreaWrapper;
+    private javax.swing.JScrollPane inputAreaWrapper;
     private javax.swing.JPanel leftPanel;
     private javax.swing.JPanel rightSidePanel;
+    private javax.swing.JSeparator separator;
+    private javax.swing.JScrollPane rightPanelWrapper;
     // End of variables declaration                   
 }
